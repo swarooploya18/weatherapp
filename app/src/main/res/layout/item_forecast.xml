@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="145dp"
+    android:layout_marginEnd="10dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#D6E9FF">
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#17365D" />
+
+    <TextView
+        android:id="@+id/tvForecastIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☀️"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvMaxMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32° / 24°"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#17365D"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

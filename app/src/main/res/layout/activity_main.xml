@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#EAF4FF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WEATHER APP"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#174A7E"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_gravity="end" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Current Location"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#17365D" />
+
+                <Button
+                    android:id="@+id/btnFavourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="☆ Save" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvWeatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="☀️"
+                android:textSize="75sp"
+                android:gravity="center"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/tvTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--°C"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                android:textColor="#174A7E"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading weather..."
+                android:textSize="20sp"
+                android:textColor="#456789"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvWind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wind Speed: -- km/h"
+                android:textSize="17sp"
+                android:textColor="#17365D"
+                android:gravity="center"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/btnUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change °C / °F"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7-Day Forecast"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#17365D"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvForecast"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:nestedScrollingEnabled="false" />
+
+            <Button
+                android:id="@+id/btnFavorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Favourite Cities"
+                android:layout_marginTop="25dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
